@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ContacTel</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="listPage" data-role="page">
+        <div data-role="header">
+            <h1> Contact'Tel</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#addPage" data-role="button" data-icon="plus" data-iconpos="right">Ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher">
+                <li>
+                    <a href="#info">
+                        <img src="img/avatar-hijab.jpg">
+                        <h1>Faty DIOP</h1>
+                        <p> 77 000 00 00</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#info">
+                        <img src="img/avatar1.jpg">
+                        <h1>Jeanne DIOKH</h1>
+                        <p> 77 111 00 00</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#info">
+                        <img src="img/avatar-woman.jpg">
+                        <h1>Amina DIAW</h1>
+                        <p> 77 010 11 11</p>
+                        
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+       <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>
+    </div>
+    <div id="addPage" data-role="page">
+        <div data-role="header">
+            <a href="#" data-rel="back" data-icon="home" data-iconpos="notext">Précédent</a>
+
+            <h1>Veillez ajouter un contact</h1>
+        </div>
+        
+        <form>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <input type="text" id="nom" placeholder="Nom">
+            <input type="tel" id="telephone" placeholder="Téléphone">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="adresse" placeholder="Adresse">
+            <a href="#pageOk" data-role="button" data-icon="plus" data-iconpos="right">Ajouter</a>
+
+        </form>
+        <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>
+    </div>
+    <div id="pageOk" data-role="page">     
+        <div data-role="header" >
+             <a href="#listPage"  data-icon="home" data-iconpos="notext">Précédent</a>
+            <h1>Contact Enregistrer</h1>
+        </div>
+        <p>OK</p>
+        
+        <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>    
+    </div>
+
+    <div id="info" data-role="page">     
+        <div data-role="header">
+            <a href="#info" data-rel="back" data-icon="home" data-iconpos="notext">Précédent</a>
+            <h1>Détails Contact</h1>
+            <a href="#info" data-rel="back" data-icon="delete" data-iconpos="notext">Edit</a>
+        </div>
+        <form>
+            <h2>Prénom</h2>
+            <input type="text" id="nom renseigné" placeholder="Nom renseigné">
+            <h2>Nom</h2>
+            <input type="text" id="nom renseigné" placeholder="Nom renseigné">
+            <h2>Téléphone</h2>
+            <input type="tel" id="nom renseigné" placeholder="Nom renseigné">
+            <h2>Email</h2>
+            <input type="email" id="nom renseigné" placeholder="Nom renseigné">
+            <h2>Adresse</h2>
+            <input type="text" id="nom renseigné" placeholder="Nom renseigné">
+            <a href="#pageOk" data-role="button" data-icon="plus" data-iconpos="right">Ajouter</a>
+        </form>
+        <div data-role="footer" data-position="fixed">
+           <h1> M1IABD &copy; Octobre 2022</h1>
+        </div>    
+    </div>
+    
+</body>
+
+</html>
